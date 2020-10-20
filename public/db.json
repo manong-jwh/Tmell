@@ -24,5 +24,169 @@
             "img": "/public/images/banner6.jpg"
         }
     ],
-    "down": { "img": "/public/images/download.png" }
+    "down": { "img": "/public/images/download.png" },
+    "nav": {
+        "jj": [{
+                "id": 0,
+                "name": "口碑好物",
+                "type": "口碑好物",
+                "img": "/public/images/chire.jpg"
+            },
+            {
+                "id": 1,
+                "name": "抑菌防螨",
+                "type": "口碑好物",
+                "img": "/public/images/man.png"
+            }, {
+                "id": 2,
+                "name": "秋冬换新",
+                "type": "口碑好物",
+                "img": "/public/images/bei.png"
+            }, {
+                "id": 3,
+                "name": "北欧原木",
+                "type": "口碑好物",
+                "img": "/public/images/mu.png"
+            }, {
+                "id": 4,
+                "name": "收纳好物",
+                "type": "口碑好物",
+                "img": "/public/images/jia.png"
+            }, {
+                "id": 5,
+                "name": "餐厨爆款清单",
+                "type": "口碑好物",
+                "img": "/public/images/guo.png"
+            }, {
+                "id": 6,
+                "name": "床品件套",
+                "type": "床上用品",
+                "img": "/public/images/chuang.png"
+            },
+            {
+                "id": 7,
+                "name": "被枕盖毯",
+                "type": "床上用品",
+                "img": "/public/images/bz.png"
+            },
+            {
+                "id": 8,
+                "name": "被褥床褥",
+                "type": "床上用品",
+                "img": "/public/images/cd.png"
+            }, {
+                "id": 9,
+                "name": "客餐厅家具",
+                "type": "家具家装",
+                "img": "/public/images/sf.png"
+            }, {
+                "id": 10,
+                "name": "卧室家具",
+                "type": "家具家装",
+                "img": "/public/images/bc.png"
+            }, {
+                "id": 11,
+                "name": "办公书房家具",
+                "type": "家具家装",
+                "img": "/public/images/chire.jpg"
+            }, {
+                "id": 12,
+                "name": "小件家具",
+                "type": "家具家装",
+                "img": "/public/images/jz.png"
+            }, {
+                "id": 13,
+                "name": "灯具",
+                "type": "家具家装",
+                "img": "/public/images/td.png"
+            }, {
+                "id": 14,
+                "name": "地毯窗帘",
+                "type": "家具家装",
+                "img": "/public/images/dt.png"
+            }, {
+                "id": 15,
+                "name": "收纳",
+                "type": "收纳日用",
+                "img": "/public/images/xz.png"
+            }, {
+                "id": 16,
+                "name": "晾晒除味",
+                "type": "收纳日用",
+                "img": "/public/images/yj.png"
+            }, {
+                "id": 17,
+                "name": "毛巾浴巾",
+                "type": "收纳日用",
+                "img": "/public/images/mj.png"
+            }, {
+                "id": 18,
+                "name": "居家拖鞋",
+                "type": "收纳日用",
+                "img": "/public/images/tx.png"
+            }, {
+                "id": 19,
+                "name": "家庭医疗",
+                "type": "收纳日用",
+                "img": "/public/images/ckt.png"
+            }, {
+                "id": 20,
+                "name": "抱枕靠垫",
+                "type": "家居饰品",
+                "img": "/public/images/cz.png"
+            },
+            {
+                "id": 21,
+                "name": "家饰",
+                "type": "家居饰品",
+                "img": "/public/images/hl.png"
+            },
+            {
+                "id": 22,
+                "name": "居家布艺",
+                "type": "家居饰品",
+                "img": "/public/images/cl.png"
+            }, {
+                "id": 23,
+                "name": "锅具",
+                "type": "厨房用品",
+                "img": "/public/images/gz.png"
+            }, {
+                "id": 24,
+                "name": "餐厨配件",
+                "type": "厨房用品",
+                "img": "/public/images/c.png"
+            }, {
+                "id": 25,
+                "name": "刀剪砧板",
+                "type": "厨房用品",
+                "img": "/public/images/d.png"
+            }, {
+                "id": 26,
+                "name": "餐具",
+                "type": "厨具水具",
+                "img": "/public/images/wan.png"
+            }, {
+                "id": 27,
+                "name": "水具杯壶",
+                "type": "厨具水具",
+                "img": "/public/images/sb.png"
+            }, {
+                "id": 28,
+                "name": "茶咖酒具",
+                "type": "厨具水具",
+                "img": "/public/images/ch.png"
+            }, {
+                "id": 29,
+                "name": "宠物食品",
+                "type": "宠物生活",
+                "img": "/public/images/sp.png"
+            }, {
+                "id": 30,
+                "name": "宠物用品",
+                "type": "宠物生活",
+                "img": "/public/images/yp.png"
+            }
+        ]
+    }
 }

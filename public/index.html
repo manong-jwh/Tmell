@@ -11,7 +11,7 @@
     <script src="./jquery-3.5.1.js"></script>
 </head>
 
-<body>
+<body style="height:3000px">
     <header id="header">
         <nav>
             <div class="content">
@@ -63,20 +63,31 @@
                 <button class="btn">搜索</button>
                 <div class="word"><a href="#">新人首单0元购</a><a href="#">iPhone12</a><a href="#">每周二88折</a><a href="#">口罩</a></div>
             </div>
-            <ul class="nav-side">
-                <li><a class="nav-active" href="#">首页</a></li>
-                <li><a href="#">居家生活</a></li>
-                <li><a href="#">服饰鞋包</a></li>
-                <li><a href="#">美食酒水</a></li>
-                <li><a href="#">个护清洁</a></li>
-                <li><a href="#">母婴亲子</a></li>
-                <li><a href="#">运动旅行</a></li>
-                <li><a href="#">数码家电</a></li>
-                <li><a href="#">严选全球</a></li>
-                <li></li>
-                <li><a href="#">为你严选</a></li>
-                <li><a href="#">众筹</a></li>
-            </ul>
+
+            <div class="hidden" style="position: static;top: 0;width: 100%;
+            left: 0;background-color:#fff">
+                <div class="quan" style="width: 1090px;margin: 0 auto;">
+                    <ul class="nav-side">
+                        <li><a class="nav-active" href="#">首页</a></li>
+                        <li><a href="#">居家生活</a>
+                            <div class="jj">
+
+
+                            </div>
+                        </li>
+                        <li><a href="#">服饰鞋包</a></li>
+                        <li><a href="#">美食酒水</a></li>
+                        <li><a href="#">个护清洁</a></li>
+                        <li><a href="#">母婴亲子</a></li>
+                        <li><a href="#">运动旅行</a></li>
+                        <li><a href="#">数码家电</a></li>
+                        <li><a href="#">严选全球</a></li>
+                        <li></li>
+                        <li><a href="#">为你严选</a></li>
+                        <li><a href="#">众筹</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <div class="banner">
@@ -91,6 +102,52 @@
         </ol>
         <button class="banner-r"></button>
     </div>
+
+    <aside>
+        <ul class="aside-left">
+            <li>
+                <span>- 热销榜 -</span>
+            </li>
+            <li>
+                <img src="./images/left-1.png" alt=""><span>全站<br>热销榜</span>
+            </li>
+            <li>
+                <img src="./images/left-2.png" alt=""><span>居家<br>生活榜</span>
+            </li>
+            <li>
+                <img src="./images/left-3.png" alt=""><span>服饰<br>鞋包榜</span>
+            </li>
+            <li>
+                <img src="./images/left-4.png" alt=""><span>美食<br>酒水榜</span>
+            </li>
+            <li>
+                <img src="./images/left-5.png" alt=""><span>数码<br>家电榜</span>
+            </li>
+            <li>
+                <img src="./images/left-6.png" alt=""><span>个护<br>清洁榜</span>
+            </li>
+            <li>
+                <img src="./images/left-7.png" alt=""><span>运动<br>旅行榜</span></a>
+            </li>
+            <li>
+                <img src="./images/left-8.png" alt=""><span>母婴<br>亲子榜</span>
+            </li>
+            <li>
+                <img src="./images/left-9.png" alt=""><span>全球<br>特色榜</span>
+            </li>
+        </ul>
+        <div class="aside-right">
+            <a href="#">
+                <p>扫码领</p>
+                <p>APP大额</p>
+                <p>新人红包</p>
+            </a>
+            <a href="#"><span></span>在线客服</a>
+
+            <a href="#header"><span class="gotop"></span>回到顶部</a>
+
+        </div>
+    </aside>
     <!-- <div class="aside">
         <a href="#">
             <div class="guang">
@@ -103,6 +160,8 @@
     </script>
     <script>
         let $lis = $('.banner li');
+        let $asRig = $('.aside-right')
+
         let num = 0;
         let $imgs = '';
         $.post('http://localhost:3000/index/index', (res) => {
@@ -111,10 +170,17 @@
             bannerImg(data.banner);
             $imgs = $('.banner img');
             bannerActive($lis, $imgs);
+            console.log(data.nav)
+
         })
 
         function downLoad(down) {
-            $('.app img').attr('src', down.img)
+            $('.app img').attr('src', down.img);
+            let str = `<img width="70" src="${down.img}">
+                
+            `;
+
+            $asRig.prepend(str)
         }
         $('.close').click(() => {
             $('.aside').remove();
@@ -144,7 +210,6 @@
                 if (num >= $imgs.length) {
                     num = 0
                 }
-                console.log(num)
                 $lis.eq(num).addClass('banner-active').siblings().removeClass('banner-active');
                 $imgs.eq(num).addClass('Zindex').siblings().removeClass('Zindex');
             }, 2000);
@@ -163,8 +228,6 @@
                 num = $imgs.length
             }
             num--;
-
-
             $lis.eq(num).addClass('banner-active').siblings().removeClass('banner-active');
             $imgs.eq(num).addClass('Zindex').siblings().removeClass('Zindex');
         })
@@ -173,8 +236,6 @@
                 num = -1
             }
             num++;
-
-
             $lis.eq(num).addClass('banner-active').siblings().removeClass('banner-active');
             $imgs.eq(num).addClass('Zindex').siblings().removeClass('Zindex');
         })

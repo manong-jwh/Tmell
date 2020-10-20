@@ -220,7 +220,6 @@ header .header-btm i {
     width: 18px;
     margin-left: 22px;
     display: inline-block;
-    overflow: hidden;
     vertical-align: top;
     font-size: 12px;
 }
@@ -301,6 +300,7 @@ header .header-btm .search .word a:nth-last-of-type(2) {
 header .header-btm .nav-side {
     clear: both;
     margin-top: 110px;
+    line-height: 20px;
 }
 
 header .header-btm .nav-side li {
@@ -318,7 +318,7 @@ header .header-btm .nav-side li a {
     font-weight: 600;
 }
 
-.nav-active {
+header .header-btm .nav-side li a.nav-active {
     color: #cc9756;
     border-bottom: 3px solid #CC9756;
 }
@@ -336,6 +336,58 @@ header .header-btm .nav-side li:nth-last-of-type(3) {
     border-left: 1px solid #ccc;
     height: 14px;
     margin-top: 3px;
+}
+
+header .header-btm i.log {
+    background-position: 0 -438px;
+    height: 30px;
+    width: 126px;
+    float: left;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+header .header-btm i.sear {
+    background-position: 0 -602px;
+    height: 20px;
+    width: 20px;
+    float: left;
+    line-height: 30px;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+header .header-btm i.go1 {
+    background-position: 0 -204px;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+header .header-btm i.go {
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 10px;
+    background-position: 0 -51px;
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    font-style: normal;
+    cursor: pointer;
+}
+
+header .header-btm i.me {
+    background-position: 0 -786px;
+    height: 22px;
+    width: 20px;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 
@@ -414,6 +466,139 @@ header .header-btm .nav-side li:nth-last-of-type(3) {
 
 .banner button:nth-of-type(2):hover {
     background-position: 0 -4681px;
+}
+
+
+/*          又回到顶部            */
+
+.aside-right,
+.aside-left {
+    position: absolute;
+    top: 620px;
+    right: 0;
+    background-color: #fff;
+}
+
+.aside-right a {
+    display: block;
+    font-size: 12px;
+    height: 70px;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    color: #333;
+}
+
+.aside-right a:nth-of-type(2):hover,
+.aside-right a:nth-of-type(3):hover {
+    color: #cc9756;
+}
+
+.aside-right a p:nth-of-type(1) {
+    color: #999;
+    padding-top: 10px;
+}
+
+.aside-right a p:not(:nth-of-type(1)) {
+    color: #f60;
+}
+
+.aside-right a:not(:nth-of-type(1)) {
+    padding-top: 10px;
+}
+
+.aside-right a:nth-last-of-type(1) {
+    border: none;
+}
+
+.aside-right span {
+    background: url(../images/bj-icon4.png) no-repeat 0 -128px;
+    display: block;
+    height: 31px;
+    width: 32px;
+    margin: 0 auto;
+}
+
+.aside-right a:nth-of-type(2):hover span {
+    background-position: 0 -46px;
+}
+
+.aside-right .gotop {
+    background-position: 0 -299px;
+    height: 15px;
+    width: 24px;
+    margin-bottom: 10px;
+}
+
+.aside-right a:hover .gotop {
+    background-position: 0 -249px;
+}
+
+.aside-left {
+    width: 110px;
+    border: 1px solid #E2DED6;
+    left: 50%;
+    margin-left: -680px;
+    z-index: 98;
+    background: #fff;
+    border-radius: 4px;
+    display: block;
+}
+
+.aside-left li {
+    width: 108px;
+    height: 36px;
+    padding: 1px 11px 0;
+    text-align: left;
+    position: relative;
+    display: table;
+    cursor: pointer;
+}
+
+.aside-left li:nth-of-type(1) {
+    background: url(../images/fire.png) no-repeat bottom;
+    font-weight: bolder;
+    color: #bb3343;
+    text-align: center;
+}
+
+.aside-left li:nth-of-type(1) span {
+    padding: 0;
+}
+
+.aside-left li:not(:nth-of-type(1))::after {
+    content: '';
+    display: block;
+    width: 88px;
+    border-bottom: 1px solid #E2DED6;
+    position: absolute;
+    bottom: -1px;
+    left: 11px;
+    z-index: 1;
+}
+
+.aside-left li:hover {
+    color: #bb3343;
+}
+
+.aside-left li:nth-of-type(2) {
+    color: #bb3343;
+    font-weight: bolder;
+}
+
+.aside-left li img {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    width: 30px;
+    height: 30px;
+}
+
+.aside-left li span {
+    vertical-align: middle;
+    display: table-cell;
+    line-height: 14px;
+    font-size: 12px;
+    padding-left: 36px;
 }
 
 
