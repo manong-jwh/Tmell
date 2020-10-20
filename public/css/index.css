@@ -1,0 +1,451 @@
+/*---------------------头部----------------------*/
+
+header {
+    height: 176px;
+    width: 100%;
+}
+
+nav {
+    height: 36px;
+    background-color: #333;
+    position: relative;
+    z-index: 3;
+    line-height: 36px;
+}
+
+nav .content {
+    margin: 0 auto;
+    width: 1090px;
+}
+
+nav .content .nav-left {
+    width: 278px;
+}
+
+nav .content .nav-left img {
+    vertical-align: middle;
+}
+
+nav .content .nav-left a {
+    color: #cc9756;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+nav .content .nav-left a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .content ul li {
+    float: left;
+    position: relative;
+}
+
+nav .content ul li a {
+    font-size: 12px;
+    display: inline-block;
+    color: #ccc;
+    margin-left: 10px;
+}
+
+nav .content ul li a:hover {
+    color: #fff;
+}
+
+nav .content ul li:not(:nth-of-type(1))>a::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    border-left: 1px solid #5c5c5c;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav .content ul li i {
+    background: url(../images/bj-icon1.png) no-repeat
+}
+
+nav .content ul li:nth-last-of-type(1) a i {
+    background-position: 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    height: 11px;
+    width: 7px;
+    margin-right: 6px;
+}
+
+nav .content ul li a .icon {
+    background-position: 0 -690px;
+    display: inline-block;
+    height: 5px;
+    width: 11px;
+    vertical-align: middle;
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+
+nav .content ul li .three,
+nav .content ul li .four {
+    width: 81px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    border: 1px solid #ddd;
+    min-width: 83px;
+    position: absolute;
+    top: 36px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 3px 0;
+    display: none;
+    background-color: #fff;
+}
+
+nav .content ul li .three>a,
+nav .content ul li .four>a {
+    width: 55px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    display: inline-block;
+    margin: 0 13px;
+    border-top: 1px solid #999;
+    color: #999;
+    font-size: 12px;
+}
+
+nav .content ul li .three>a:hover,
+nav .content ul li .four>a:hover {
+    color: #B4A078;
+}
+
+nav .content ul li .three a:nth-of-type(1),
+nav .content ul li .four a:nth-of-type(1) {
+    border: 0;
+}
+
+nav .content ul li.app .down {
+    width: 139px;
+    height: 157px;
+    padding: 10px 0;
+    position: absolute;
+    top: 36px;
+    left: -50%;
+    display: none;
+    z-index: 5;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    border: 1px solid #ddd;
+    min-width: 83px;
+}
+
+nav .content ul li.app img {
+    margin: 0 10px 6px;
+    width: 117px;
+    height: 117px;
+}
+
+nav .content ul li.app .down i,
+nav .content ul li .three i,
+nav .content ul li .four i {
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -6px;
+    background-position: 0 -705px;
+    width: 12px;
+    height: 7px;
+}
+
+nav .content ul li.app .down p {
+    font-size: 12px;
+    color: #B4A078;
+    text-align: center;
+    line-height: 1;
+}
+
+
+/*---------------------header-bottom-----------*/
+
+header .header-btm {
+    width: 1090px;
+    min-width: 1090px;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+header .header-btm h1 {
+    background: url('../images/bj-icon1.png') no-repeat 0 -298px;
+    float: left;
+    height: 60px;
+    width: 212px;
+    margin-top: 20px;
+}
+
+header .header-btm h1 a {
+    display: inline-block;
+    height: 60px;
+    width: 212px;
+}
+
+header .header-btm .gou {
+    position: relative;
+    margin-top: 26px;
+    margin-left: 49px;
+    float: right;
+}
+
+header .header-btm .gou .gwc {
+    position: relative;
+    cursor: pointer;
+    width: 134px;
+    height: 38px;
+    text-align: center;
+    border: 1px solid #CC9756;
+    border-radius: 19px;
+    padding: 8px 0;
+}
+
+header .header-btm .gou .gwc span {
+    color: #CC9756;
+    margin-left: 5px;
+    margin-top: -1px;
+    font-size: 14px;
+}
+
+header .header-btm i {
+    background: url('../images/bj-icon1.png') no-repeat 0 -148px;
+    height: 18px;
+    width: 18px;
+    margin-left: 22px;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+header .header-btm .gou .gwc i:nth-of-type(2) {
+    background-position: 0 -51px;
+    height: 19px;
+    width: 19px;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-style: normal;
+}
+
+header .header-btm .search {
+    position: relative;
+    margin-top: 26px;
+    float: right;
+    width: 532px;
+    height: 36px;
+    z-index: 1;
+}
+
+header .header-btm .search input {
+    width: 442px;
+    height: 36px;
+    border-radius: 19px 0 0 19px;
+    float: left;
+    border: 1px solid #CC9756;
+    padding: 2px 0 2px 38px;
+}
+
+header .header-btm .search .btn {
+    width: 90px;
+    height: 36px;
+    border-radius: 0 18px 18px 0;
+    background-color: #cc9756;
+    cursor: pointer;
+    color: #fff;
+}
+
+header .header-btm .search i {
+    margin-left: 0;
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    background-position: 0 -518px;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+header .header-btm .search .word {
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+}
+
+header .header-btm .search .word a {
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+    color: #CC9756;
+    font-size: 12px;
+}
+
+header .header-btm .search .word a:nth-last-of-type(1) {
+    border: 0;
+}
+
+header .header-btm .search .word a:nth-last-of-type(2) {
+    color: #999;
+}
+
+header .header-btm .nav-side {
+    clear: both;
+    margin-top: 110px;
+}
+
+header .header-btm .nav-side li {
+    /* display: inline-block;
+    font-size: 14px; */
+    padding: 0 26px;
+    float: left;
+}
+
+header .header-btm .nav-side li a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 0 7px;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-active {
+    color: #cc9756;
+    border-bottom: 3px solid #CC9756;
+}
+
+header .header-btm .nav-side li:nth-of-type(1) {
+    padding-left: 0;
+}
+
+header .header-btm .nav-side li:nth-last-of-type(1) {
+    padding-right: 0;
+}
+
+header .header-btm .nav-side li:nth-last-of-type(3) {
+    padding: 0;
+    border-left: 1px solid #ccc;
+    height: 14px;
+    margin-top: 3px;
+}
+
+
+/*---------------banner-----------------*/
+
+.pos-absolute {
+    position: absolute;
+}
+
+.banner {
+    height: 420px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    left: -280px;
+    height: 100%;
+}
+
+.banner img:nth-of-type(1) {
+    z-index: 1;
+}
+
+.Zindex {
+    z-index: 3;
+}
+
+.banner ol {
+    position: absolute;
+    text-align: center;
+    z-index: 4;
+    bottom: 0;
+    left: 50%;
+}
+
+.banner ol li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 8px 10px;
+    cursor: pointer;
+}
+
+.banner ol li.banner-active {
+    background-color: #a7962e;
+    box-shadow: 0 0 0 5px rgba(176, 124, 98, 0.5);
+}
+
+.banner button {
+    background: url('../images/bj-icon3.png') no-repeat 0 -2620px;
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.banner button:nth-of-type(1) {
+    left: 85px;
+}
+
+.banner button:nth-of-type(1):hover {
+    background-position: 0 -2560px;
+}
+
+.banner button:nth-of-type(2) {
+    background-position: 0 -4741px;
+    right: 85px;
+}
+
+.banner button:nth-of-type(2):hover {
+    background-position: 0 -4681px;
+}
+
+
+/*--------------------广告---------------------*/
+
+.aside {
+    width: 100%;
+    height: 120px;
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    z-index: 99;
+}
+
+.aside a .guang {
+    min-width: 1090px;
+    width: 1090px;
+    height: 90px;
+    margin: 15px auto;
+    text-align: center;
+    background: url(../images/guanggao.png);
+    position: relative;
+}
+
+.aside a .guang i {
+    display: inline-block;
+    top: -11px;
+    right: -11px;
+    cursor: pointer;
+    position: absolute;
+    background: no-repeat url(../images/bj-icon2.png) 0 -76px;
+    height: 22px;
+    width: 22px;
+    z-index: 100;
+}

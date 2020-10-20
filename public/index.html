@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易严选-以严谨的态度，为中国消费者甄选天下优品</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="content">
+                <div class="nav-left l">
+                    <img src="./images/laba.gif" alt="">
+                    <a href="#">关于防止近期不法分子冒充客服实施诈骗的公告</a>
+                </div>
+                <ul class="r">
+                    <li><a href="#">登录/注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">会员</a></li>
+                    <li><a href="#">甄选家</a></li>
+                    <li class="qycg"><a href="#">企业采购<i class="icon"></i></a>
+                        <div class="three">
+                            <i></i>
+                            <a href="#">企业购</a>
+                            <a href="#">礼品卡</a>
+                            <a href="#">联系我们</a>
+                        </div>
+                    </li>
+                    <li class="khfw"><a href="#">客户服务<i class="icon"></i></a>
+                        <div class="four">
+                            <i></i>
+                            <a href="#">在线客服</a>
+                            <a href="#">帮助中心</a>
+                            <a href="#">商务合作</a>
+                            <a href="#">开放平台</a>
+                        </div>
+                    </li>
+                    <li class="app"><a href="#"><i></i>APP</a>
+                        <div class="down">
+                            <i></i><img src="" alt="">
+                            <p>下载领大额新人红包</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="header-btm">
+            <h1>
+                <a href="#"></a>
+            </h1>
+            <div class="gou">
+                <div class="gwc"><i></i><span>购物车</span><i>0</i></div>
+            </div>
+            <div class="search">
+                <i></i><input type="text" placeholder="9.9元超值区">
+                <button class="btn">搜索</button>
+                <div class="word"><a href="#">新人首单0元购</a><a href="#">iPhone12</a><a href="#">每周二88折</a><a href="#">口罩</a></div>
+            </div>
+            <ul class="nav-side">
+                <li><a class="nav-active" href="#">首页</a></li>
+                <li><a href="#">居家生活</a></li>
+                <li><a href="#">服饰鞋包</a></li>
+                <li><a href="#">美食酒水</a></li>
+                <li><a href="#">个护清洁</a></li>
+                <li><a href="#">母婴亲子</a></li>
+                <li><a href="#">运动旅行</a></li>
+                <li><a href="#">数码家电</a></li>
+                <li><a href="#">严选全球</a></li>
+                <li></li>
+                <li><a href="#">为你严选</a></li>
+                <li><a href="#">众筹</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="banner">
+        <button class="banner-l"></button>
+        <ol>
+            <li class="banner-active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+        <button class="banner-r"></button>
+    </div>
+    <!-- <div class="aside">
+        <a href="#">
+            <div class="guang">
+                <i class="close"></i>
+            </div>
+        </a>
+    </div> -->
+    <script src="./js/nav-main.js" type="module">
+
+    </script>
+    <script>
+        let $lis = $('.banner li');
+        let num = 0;
+        let $imgs = '';
+        $.post('http://localhost:3000/index/index', (res) => {
+            let data = JSON.parse(res.list)
+            downLoad(data.down);
+            bannerImg(data.banner);
+            $imgs = $('.banner img');
+            bannerActive($lis, $imgs);
+        })
+
+        function downLoad(down) {
+            $('.app img').attr('src', down.img)
+        }
+        $('.close').click(() => {
+            $('.aside').remove();
+        })
+
+        function bannerImg(banner) {
+            let str = ''
+            banner.forEach((elem, i) => {
+                str += `<img src="${elem.img}" class="pos-absolute" alt="">`
+            });
+            $('.banner').append(str)
+        }
+        //li切换轮播
+        function bannerActive(elem, elem1) {
+            elem.mouseover(function() {
+                num = $(this).index();
+                $(this).addClass('banner-active').siblings().removeClass('banner-active');
+                elem1.eq(num).addClass('Zindex').siblings().removeClass('Zindex');
+            })
+        }
+        var timer;
+        time();
+        //自动播放轮播图
+        function time() {
+            timer = setInterval(() => {
+                num++;
+                if (num >= $imgs.length) {
+                    num = 0
+                }
+                console.log(num)
+                $lis.eq(num).addClass('banner-active').siblings().removeClass('banner-active');
+                $imgs.eq(num).addClass('Zindex').siblings().removeClass('Zindex');
+            }, 2000);
+        }
+        //移入banner 停止自动播放
+        $('.banner').on({
+            mouseover: () => {
+                clearInterval(timer);
+            },
+            mouseout: () => {
+                time();
+            }
+        })
+        $('.banner-l').click(() => {
+            if (num == 0) {
+                num = $imgs.length
+            }
+            num--;
+
+
+            $lis.eq(num).addClass('banner-active').siblings().removeClass('banner-active');
+            $imgs.eq(num).addClass('Zindex').siblings().removeClass('Zindex');
+        })
+        $('.banner-r').click(() => {
+            if (num == $imgs.length - 1) {
+                num = -1
+            }
+            num++;
+
+
+            $lis.eq(num).addClass('banner-active').siblings().removeClass('banner-active');
+            $imgs.eq(num).addClass('Zindex').siblings().removeClass('Zindex');
+        })
+        width = $('.banner ol').width();
+        $('.banner ol').css('margin-left', -width / 2);
+    </script>
+</body>
+
+</html>

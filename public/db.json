@@ -23,6 +23,6 @@
             "id": 6,
             "img": "/public/images/banner6.jpg"
         }
-
-    ]
+    ],
+    "down": { "img": "/public/images/download.png" }
 }
