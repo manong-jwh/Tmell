@@ -123,7 +123,7 @@
                 "id": 18,
                 "name": "居家拖鞋",
                 "type": "收纳日用",
-                "img": "/public/images/tx.png"
+                "img": "/public/images/th.png"
             }, {
                 "id": 19,
                 "name": "家庭医疗",
@@ -188,5 +188,86 @@
                 "img": "/public/images/yp.png"
             }
         ]
-    }
+    },
+    "man": [{
+            "id": 0,
+            "img": "/public/images/man-1.png",
+            "imghover": "/public/images/manx1.jpg",
+            "tap": "折叠出水口可自动停止 3秒",
+            "tbp": "速热便携饮水机",
+            "ys": "11.11预售",
+            "num": "¥265",
+            "sum": "¥339"
+        },
+        {
+            "id": 1,
+            "img": "/public/images/man-2.png",
+            "imghover": "/public/images/manx2.jpg",
+            "tap": "速热便携饮水机",
+            "tbp": "",
+            "ys": "11.11预售",
+            "num": "¥499",
+            "sum": "¥599"
+        },
+        {
+            "id": 2,
+            "img": "/public/images/man-3.png",
+            "imghover": "/public/images/manx3.png",
+            "tap": "原创设计一体化机身",
+            "tbp": "精致迷你破壁机350mL",
+            "ys": "11.11预售",
+            "num": "¥299",
+            "sum": ""
+        },
+        {
+            "id": 3,
+            "img": "/public/images/man-4.png",
+            "imghover": "/public/images/manx4.jpg",
+            "tap": "眼镜/首饰清洗+除菌 ，超声",
+            "tbp": "波清洁机pro版",
+            "ys": "满赠",
+            "num": "¥219",
+            "sum": "¥299"
+        }
+    ],
+    "ping": [{
+            "id": 0,
+            "img": "/public/images/foot1.jpg",
+            "name": "办公书房家具",
+            "time": "2020-09-15 12:30",
+            "price": "¥150",
+            "pl": "大家好，我是码农小蒋",
+            "sName": "波清洁机pro版"
+        },
+        {
+            "id": 1,
+            "img": "/public/images/foot2.png",
+            "name": "电饭锅和",
+            "time": "2020-09-15 12:30",
+            "price": "¥150",
+            "pl": "",
+            "sName": "波清洁机pro版"
+        },
+        {
+            "id": 2,
+            "img": "/public/images/foot3.png",
+            "name": "阿双方各并不是",
+            "time": "2020-09-15 12:30",
+            "price": "¥150",
+            "pl": "大家好，我是码农小蒋",
+            "sName": "波清洁机pro版"
+        }
+    ],
+    "jjBanner": [{
+            "id": 0,
+            "img": "/public/images/2-banner1.jpg"
+        },
+        {
+            "id": 1,
+            "img": "/public/images/2-banner2.jpg"
+        }, {
+            "id": 2,
+            "img": "/public/images/2-banner3.jpg"
+        }
+    ]
 }

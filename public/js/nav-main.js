@@ -11,9 +11,10 @@ nav($qycg, $three);
 nav($khfw, $four);
 nav($app, $down);
 navActive($nav_active, $par);
-
-
-//导航吸顶
+var $jjsh = $('.jjsh');
+var $jj = $('.a');
+nav($jjsh, $jj)
+    //导航吸顶
 let $nau = $('.nav-side');
 let $hid = $('.hidden');
 let $right = $('.aside-right');

@@ -44,6 +44,7 @@ function addXd(elem, elem1, elem2, elem3) {
             elem1.css({
                 'z-index': 99999,
                 'position': 'fixed',
+                height: '46px'
             })
             $ls.each((i, elems) => {
                 $(elems).hide()
@@ -80,10 +81,13 @@ function addXd(elem, elem1, elem2, elem3) {
                 })
             })
             elem.children('li').eq(0).css({
-                padding: 0
+                'padding-left': 0
             })
             elem.children('li').eq(9).css({
                 padding: 0
+            })
+            elem.children('li').last().css({
+                'padding-right': 0
             })
             $('.log').remove();
             $(".sear").remove()
@@ -101,7 +105,16 @@ function addXd(elem, elem1, elem2, elem3) {
         } else {
             elem2.css({
                 position: 'absolute',
-                top: '620px'
+                top: rt + 'px'
+            })
+        }
+        if (t >= rt) {
+            elem2.children('a').eq(2).css({
+                display: 'block'
+            })
+        } else {
+            elem2.children('a').eq(2).css({
+                display: 'none'
             })
         }
         if (t >= lt - 50) {
@@ -114,7 +127,7 @@ function addXd(elem, elem1, elem2, elem3) {
         } else {
             elem3.css({
                 position: 'absolute',
-                top: '620px'
+                top: lt + 'px'
             })
         }
     }
@@ -122,6 +135,8 @@ function addXd(elem, elem1, elem2, elem3) {
 
 
 //左右广告
+
+
 
 
 export { nav, navActive, addXd }

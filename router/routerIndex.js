@@ -17,7 +17,6 @@ router.post('/index', (req, res) => {
         })
         res1.on('end', () => {
             // 数据流传输完毕时触发end事件
-            console.log(resData)
             res.send({ err: 0, msg: '查询成功', list: resData })
         })
     })

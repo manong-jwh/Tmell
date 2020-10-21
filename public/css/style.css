@@ -64,3 +64,896 @@ body {
 .r {
     float: right;
 }
+
+
+/*---------------------头部----------------------*/
+
+header {
+    height: 176px;
+    width: 100%;
+}
+
+nav {
+    height: 36px;
+    background-color: #333;
+    position: relative;
+    z-index: 3;
+    line-height: 36px;
+}
+
+nav .content {
+    margin: 0 auto;
+    width: 1090px;
+}
+
+nav .content .nav-left {
+    width: 278px;
+}
+
+nav .content .nav-left img {
+    vertical-align: middle;
+}
+
+nav .content .nav-left a {
+    color: #cc9756;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+nav .content .nav-left a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .content ul li {
+    float: left;
+    position: relative;
+}
+
+nav .content ul li a {
+    font-size: 12px;
+    display: inline-block;
+    color: #ccc;
+    margin-left: 10px;
+}
+
+nav .content ul li a:hover {
+    color: #fff;
+}
+
+nav .content ul li:not(:nth-of-type(1))>a::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    border-left: 1px solid #5c5c5c;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+nav .content ul li i {
+    background: url(../images/bj-icon1.png) no-repeat
+}
+
+nav .content ul li:nth-last-of-type(1) a i {
+    background-position: 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    height: 11px;
+    width: 7px;
+    margin-right: 6px;
+}
+
+nav .content ul li a .icon {
+    background-position: 0 -690px;
+    display: inline-block;
+    height: 5px;
+    width: 11px;
+    vertical-align: middle;
+    margin-left: 10px;
+    transform: rotate(180deg);
+}
+
+nav .content ul li .three,
+nav .content ul li .four {
+    width: 81px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    border: 1px solid #ddd;
+    min-width: 83px;
+    position: absolute;
+    top: 36px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 3px 0;
+    display: none;
+    background-color: #fff;
+}
+
+nav .content ul li .three>a,
+nav .content ul li .four>a {
+    width: 55px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+    display: inline-block;
+    margin: 0 13px;
+    border-top: 1px solid #999;
+    color: #999;
+    font-size: 12px;
+}
+
+nav .content ul li .three>a:hover,
+nav .content ul li .four>a:hover {
+    color: #B4A078;
+}
+
+nav .content ul li .three a:nth-of-type(1),
+nav .content ul li .four a:nth-of-type(1) {
+    border: 0;
+}
+
+nav .content ul li.app .down {
+    width: 139px;
+    height: 157px;
+    padding: 10px 0;
+    position: absolute;
+    top: 36px;
+    left: -50%;
+    display: none;
+    z-index: 5;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    border: 1px solid #ddd;
+    min-width: 83px;
+}
+
+nav .content ul li.app img {
+    margin: 0 10px 6px;
+    width: 117px;
+    height: 117px;
+}
+
+nav .content ul li.app .down i,
+nav .content ul li .three i,
+nav .content ul li .four i {
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    margin-left: -6px;
+    background-position: 0 -705px;
+    width: 12px;
+    height: 7px;
+}
+
+nav .content ul li.app .down p {
+    font-size: 12px;
+    color: #B4A078;
+    text-align: center;
+    line-height: 1;
+}
+
+
+/*---------------------header-bottom-----------*/
+
+header .header-btm {
+    width: 1090px;
+    min-width: 1090px;
+    height: 140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header .header-btm h1 {
+    background: url('../images/bj-icon1.png') no-repeat 0 -298px;
+    float: left;
+    height: 60px;
+    width: 212px;
+    margin-top: 20px;
+}
+
+header .header-btm h1 a {
+    display: inline-block;
+    height: 60px;
+    width: 212px;
+}
+
+header .header-btm .gou {
+    position: relative;
+    margin-top: 26px;
+    margin-left: 49px;
+    float: right;
+}
+
+header .header-btm .gou .gwc {
+    position: relative;
+    cursor: pointer;
+    width: 134px;
+    height: 38px;
+    text-align: center;
+    border: 1px solid #CC9756;
+    border-radius: 19px;
+    padding: 8px 0;
+}
+
+header .header-btm .gou .gwc span {
+    color: #CC9756;
+    margin-left: 5px;
+    margin-top: -1px;
+    font-size: 14px;
+}
+
+header .header-btm i {
+    background: url('../images/bj-icon1.png') no-repeat 0 -148px;
+    height: 18px;
+    width: 18px;
+    margin-left: 22px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+}
+
+header .header-btm .gou .gwc i:nth-of-type(2) {
+    background-position: 0 -51px;
+    height: 19px;
+    width: 19px;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-style: normal;
+}
+
+header .header-btm .search {
+    position: relative;
+    margin-top: 26px;
+    float: right;
+    width: 532px;
+    height: 36px;
+    z-index: 1;
+}
+
+header .header-btm .search input {
+    width: 442px;
+    height: 36px;
+    border-radius: 19px 0 0 19px;
+    float: left;
+    border: 1px solid #CC9756;
+    padding: 2px 0 2px 38px;
+}
+
+header .header-btm .search .btn {
+    width: 90px;
+    height: 36px;
+    border-radius: 0 18px 18px 0;
+    background-color: #cc9756;
+    cursor: pointer;
+    color: #fff;
+}
+
+header .header-btm .search i {
+    margin-left: 0;
+    position: absolute;
+    left: 18px;
+    top: 12px;
+    background-position: 0 -518px;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+header .header-btm .search .word {
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 18px;
+    margin-top: 10px;
+}
+
+header .header-btm .search .word a {
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+    color: #CC9756;
+    font-size: 12px;
+}
+
+header .header-btm .search .word a:nth-last-of-type(1) {
+    border: 0;
+}
+
+header .header-btm .search .word a:nth-last-of-type(2) {
+    color: #999;
+}
+
+header .header-btm .nav-side {
+    clear: both;
+    margin-top: 110px;
+    line-height: 20px;
+    position: absolute;
+}
+
+header .header-btm .nav-side li {
+    /* display: inline-block;
+    font-size: 14px; */
+    padding: 0 26px;
+    float: left;
+    position: relative;
+}
+
+header .header-btm .nav-side li a {
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 0 7px;
+    color: #333;
+    font-weight: 600;
+}
+
+header .header-btm .nav-side li a.nav-active {
+    color: #cc9756;
+    border-bottom: 3px solid #CC9756;
+}
+
+header .header-btm .nav-side li:nth-of-type(1) {
+    padding-left: 0;
+}
+
+header .header-btm .nav-side li:nth-last-of-type(1) {
+    padding-right: 0;
+}
+
+header .header-btm .nav-side li:nth-last-of-type(3) {
+    padding: 0;
+    border-left: 1px solid #ccc;
+    height: 14px;
+    margin-top: 3px;
+}
+
+header .header-btm i.log {
+    background-position: 0 -438px;
+    height: 30px;
+    width: 126px;
+    float: left;
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+header .header-btm i.sear {
+    background-position: 0 -602px;
+    height: 20px;
+    width: 20px;
+    float: left;
+    line-height: 30px;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left: 0;
+}
+
+header .header-btm i.go1 {
+    background-position: 0 -204px;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+header .header-btm i.go {
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 10px;
+    background-position: 0 -51px;
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    right: -7px;
+    top: -7px;
+    font-style: normal;
+    cursor: pointer;
+}
+
+header .header-btm i.me {
+    background-position: 0 -786px;
+    height: 22px;
+    width: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.jj {
+    display: flex;
+    justify-content: space-between;
+}
+
+.a {
+    display: none;
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+    background-color: #fff;
+    padding: 14px 20px 20px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    left: -116px;
+}
+
+.jj .xianga {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    cursor: pointer;
+}
+
+.jj span {
+    width: 70px;
+    max-width: 70px;
+    max-height: 48px;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 1.2;
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.jj p {
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.xianga {
+    margin-bottom: 4px;
+}
+
+.xianga:hover {
+    color: #cc9756;
+}
+
+.jj p::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    margin-bottom: 10px;
+}
+
+
+/*---------------banner-----------------*/
+
+.pos-absolute {
+    position: absolute;
+}
+
+.banner {
+    height: 420px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    left: -280px;
+    height: 100%;
+    transition: all .5s;
+}
+
+.banner img:not(:nth-of-type(1)) {
+    opacity: 0;
+}
+
+.banner ol {
+    position: absolute;
+    text-align: center;
+    z-index: 4;
+    bottom: 0;
+    left: 50%;
+}
+
+.banner ol li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 8px 10px;
+    cursor: pointer;
+}
+
+.banner ol li.banner-active {
+    background-color: #a7962e;
+    box-shadow: 0 0 0 5px rgba(176, 124, 98, 0.5);
+}
+
+.banner button {
+    background: url('../images/bj-icon3.png') no-repeat 0 -2620px;
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.banner button:nth-of-type(1) {
+    left: 70px;
+}
+
+.banner button:nth-of-type(1):hover {
+    background-position: 0 -2560px;
+}
+
+.banner button:nth-of-type(2) {
+    background-position: 0 -4741px;
+    right: 85px;
+}
+
+.banner button:nth-of-type(2):hover {
+    background-position: 0 -4681px;
+}
+
+
+/*          又回到顶部            */
+
+.aside-right,
+.aside-left {
+    position: absolute;
+    top: 620px;
+    right: 0;
+    background-color: #fff;
+}
+
+.aside-right a {
+    display: block;
+    font-size: 12px;
+    height: 70px;
+    border-top: 1px solid #999;
+    text-align: center;
+    color: #333;
+}
+
+.aside-right a:nth-of-type(2):hover,
+.aside-right a:nth-of-type(3):hover {
+    color: #cc9756;
+}
+
+.aside-right a p:nth-of-type(1) {
+    color: #999;
+    padding-top: 10px;
+}
+
+.aside-right a p:not(:nth-of-type(1)) {
+    color: #f60;
+}
+
+.aside-right a:not(:nth-of-type(1)) {
+    padding-top: 10px;
+}
+
+.aside-right a:nth-of-type(1) {
+    border: none;
+}
+
+.aside-right span {
+    background: url(../images/bj-icon4.png) no-repeat 0 -128px;
+    display: block;
+    height: 31px;
+    width: 32px;
+    margin: 0 auto;
+}
+
+.aside-right a:nth-of-type(2):hover span {
+    background-position: 0 -46px;
+}
+
+.aside-right .gotop {
+    background-position: 0 -299px;
+    height: 15px;
+    width: 24px;
+    margin-bottom: 10px;
+}
+
+.aside-right a:hover .gotop {
+    background-position: 0 -249px;
+}
+
+.aside-left {
+    width: 110px;
+    border: 1px solid #E2DED6;
+    left: 50%;
+    margin-left: -675px;
+    z-index: 98;
+    background: #fff;
+    border-radius: 4px;
+    display: block;
+}
+
+.aside-left li {
+    width: 108px;
+    height: 36px;
+    padding: 1px 11px 0;
+    text-align: left;
+    position: relative;
+    display: table;
+    cursor: pointer;
+}
+
+.aside-left li:nth-of-type(1) {
+    background: url(../images/fire.png) no-repeat bottom;
+    font-weight: bolder;
+    color: #bb3343;
+    text-align: center;
+}
+
+.aside-left li:nth-of-type(1) span {
+    padding: 0;
+}
+
+.aside-left li:not(:nth-of-type(1))::after {
+    content: '';
+    display: block;
+    width: 88px;
+    border-bottom: 1px solid #E2DED6;
+    position: absolute;
+    bottom: -1px;
+    left: 11px;
+    z-index: 1;
+}
+
+.aside-left li:hover {
+    color: #bb3343;
+}
+
+.aside-left li:nth-of-type(2) {
+    color: #bb3343;
+    font-weight: bolder;
+}
+
+.aside-left li img {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    width: 30px;
+    height: 30px;
+}
+
+.aside-left li span {
+    vertical-align: middle;
+    display: table-cell;
+    line-height: 14px;
+    font-size: 12px;
+    padding-left: 36px;
+}
+
+
+/*===============footop====================*/
+
+.w {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+#footop {
+    height: 300px;
+    padding-top: 60px;
+    padding-bottom: 34px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+}
+
+#footop #footop_a {
+    height: 100%;
+    display: flex;
+}
+
+#footop #footop_a div {
+    height: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#footop #footop_a div:not(:nth-of-type(3)) {
+    border-right: 1px solid #ccc;
+}
+
+#footop #footop_a div h4 {
+    height: 16px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 28px;
+    line-height: 1;
+}
+
+#footop #footop_a div a {
+    width: 80px;
+    height: 100px;
+    font-size: 14px;
+    background-color: #fff;
+    padding-top: 25px;
+    text-align: center;
+    border: 1px solid #E8E8E8;
+    border-radius: 2px;
+    vertical-align: middle;
+    letter-spacing: normal;
+    line-height: 26px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#footop #footop_a div a:nth-of-type(2) {
+    margin-left: 29px;
+}
+
+#footop #footop_a div a i {
+    height: 26px;
+    width: 31px;
+    display: inline-block;
+}
+
+#footop #footop_a div a:nth-of-type(1) i {
+    background: url(../images/bj-icon7.png) no-repeat 0 -290px;
+}
+
+#footop #footop_a div a:nth-of-type(2) i {
+    background: url(../images/bj-icon7.png) no-repeat 0 -97px;
+}
+
+#footop #footop_a div a p {
+    line-height: 26px;
+}
+
+#footop #footop_a div a:hover {
+    color: #b4a078;
+}
+
+#footop #footop_a div:nth-of-type(2) p {
+    padding: 0 37px;
+    text-align: left;
+    font-size: 13px;
+    line-height: 23px;
+    margin-bottom: 22px;
+}
+
+#footop #footop_a div:nth-of-type(2) div {
+    height: 32px;
+    padding: 0 37px;
+    line-height: 1;
+    text-align: left;
+    display: flex;
+}
+
+#footop #footop_a div:nth-of-type(2) div p {
+    padding-left: 37px;
+    padding-right: 10px;
+    line-height: 32px;
+}
+
+#footop #footop_a div:nth-of-type(2) div i {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#footop #footop_a div:nth-of-type(2) div i:nth-of-type(1) {
+    background: url(../images/bj-icon7.png) no-repeat 0 -470px;
+}
+
+#footop #footop_a div:nth-of-type(2) div i:nth-of-type(2) {
+    background: url(../images/bj-icon7.png) no-repeat 0 -428px;
+}
+
+#footop #footop_a div:nth-of-type(2) div i:nth-of-type(3) {
+    background: url(../images/bj-icon7.png) no-repeat 0 -326px;
+}
+
+#footop #footop_a div:nth-of-type(3) i img {
+    width: 104px;
+    height: 104px;
+}
+
+#footop #footop_a div:nth-of-type(3) i {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#footop #footop_a div:nth-of-type(3) p {
+    color: #b4a078;
+    line-height: 1.5;
+}
+
+
+/*===============footer====================*/
+
+footer {
+    height: 268px;
+    padding-top: 37px;
+    background-color: #333333;
+    box-sizing: border-box;
+}
+
+footer #fotr ul {
+    padding-left: 17px;
+    display: flex;
+    /* height: 50px;
+    border-bottom: 1px solid #ccc; */
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer #fotr ul li {
+    color: #fff;
+    font-size: 18px;
+    background: #333333;
+    height: 50px;
+}
+
+footer #fotr ul li i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 17px;
+}
+
+footer #fotr ul li p {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+footer #fotr ul li:nth-of-type(1) i {
+    background: url(../images/bj-icon7.png) no-repeat 0 -134px;
+}
+
+footer #fotr ul li:nth-of-type(2) i {
+    background: url(../images/bj-icon7.png) no-repeat 0 -368px;
+}
+
+footer #fotr ul li:nth-of-type(3) i {
+    background: url(../images/bj-icon7.png) no-repeat 0 0;
+}
+
+footer #fotr ul li:nth-of-type(4) i {
+    background: url(../images/bj-icon7.png) no-repeat 0 -194px;
+}
+
+footer #fotr div {
+    padding-top: 14px;
+}
+
+footer #fotr div ul {
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    border-bottom: 0;
+}
+
+footer #fotr div li {
+    display: inline-block;
+}
+
+footer #fotr div li a {
+    display: block;
+    padding: 0 14px;
+    color: #7c7c7c;
+    font-size: 14px;
+}
+
+footer #fotr div li a.wu_1 {
+    background-image: none;
+}
+
+footer #fotr div .p1 {
+    font-size: 14px;
+    text-align: center;
+    color: #7c7c7c;
+}
+
+footer #fotr div .p2 {
+    line-height: 46px;
+    color: #7c7c7c;
+    text-align: center;
+}
