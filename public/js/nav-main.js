@@ -19,7 +19,26 @@ let $nau = $('.nav-side');
 let $hid = $('.hidden');
 let $right = $('.aside-right');
 let $left = $('.aside-left');
-
-addXd($nau, $hid, $right, $left)
+let $a = $('.a')
+addXd($nau, $hid, $right, $left, $a)
 
 //右
+
+
+
+
+import big from './fangda.js';
+let $elem = $('.m2-1-1-1');
+let $big = $('.fdj');
+let $bingimg = $('.big');
+let $bigdad = $('.bigdad');
+big($elem, $big, $bigdad, $bingimg)
+
+
+
+let $movImg = $('.m2-1-1-2 img');
+let $bim = $('.bim');
+
+import qie from './qietu.js'
+
+qie($movImg, $bim, $bingimg)

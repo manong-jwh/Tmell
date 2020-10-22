@@ -292,9 +292,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/nav-main.js" type="module">
-
-    </script>
+    <script src="./js/nav-main.js" type="module"></script>
     <script>
         let $lis = $('.banner li');
         let $asRig = $('.aside-right')
@@ -323,9 +321,9 @@
                     item.pl = '未及时评价，默认好评';
                 }
                 let name = item.name
-                name = name.replace(name.slice(1, -1), function(i, v, a) {
+                name = name.replace(name.slice(1, -1), function(v, i, a) {
                     var s = ''
-                    for (var j = 0, len = i.length; j < len; j++) {
+                    for (var j = 0, len = v.length; j < len; j++) {
                         s += '*'
                     }
                     return s

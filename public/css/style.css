@@ -873,11 +873,9 @@ footer {
     box-sizing: border-box;
 }
 
-footer #fotr ul {
+footer #fotr>ul {
     padding-left: 17px;
     display: flex;
-    /* height: 50px;
-    border-bottom: 1px solid #ccc; */
     justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 1px solid #ccc;
@@ -920,40 +918,61 @@ footer #fotr ul li:nth-of-type(4) i {
     background: url(../images/bj-icon7.png) no-repeat 0 -194px;
 }
 
-footer #fotr div {
-    padding-top: 14px;
-}
-
-footer #fotr div ul {
-    height: 45px;
+footer #fotr .sec ul {
     text-align: center;
-    line-height: 45px;
-    border-bottom: 0;
+    border: 0;
 }
 
-footer #fotr div li {
+footer #fotr .sec ul li {
     display: inline-block;
+    padding-left: 13px;
+    height: 15px;
+    line-height: 15px;
+    margin-top: 20px;
+    font-size: 12px;
 }
 
-footer #fotr div li a {
-    display: block;
-    padding: 0 14px;
-    color: #7c7c7c;
-    font-size: 14px;
+footer #fotr .sec ul li:not(.last)::after {
+    content: "";
+    width: 1px;
+    height: 15px;
+    border-right: 1px solid #888;
+    padding-right: 13px
 }
 
-footer #fotr div li a.wu_1 {
-    background-image: none;
-}
-
-footer #fotr div .p1 {
-    font-size: 14px;
+footer #fotr .other {
+    margin: 5px 0;
     text-align: center;
-    color: #7c7c7c;
+    height: 25px
 }
 
-footer #fotr div .p2 {
-    line-height: 46px;
-    color: #7c7c7c;
-    text-align: center;
+footer #fotr .other a,
+footer #fotr .other span {
+    color: #aaa;
+    font-size: 12px
+}
+
+footer a {
+    color: #fff;
+}
+
+
+/***************详情、分类************************/
+
+.m-crumbs {
+    width: 1090px;
+    font-size: 12px;
+    color: #333;
+    line-height: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.m-crumbs a {
+    color: #333;
+}
+
+.m-crumbs a:hover {
+    text-decoration: underline;
 }

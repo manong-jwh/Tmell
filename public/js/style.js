@@ -24,7 +24,7 @@ function navActive(elem, elem1) {
 
 
 
-function addXd(elem, elem1, elem2, elem3) {
+function addXd(elem, elem1, elem2, elem3, elem4) {
     let mt = elem.offset().top;
     let rt = elem2.offset().top;
     let lt = elem3.offset().top;
@@ -46,6 +46,10 @@ function addXd(elem, elem1, elem2, elem3) {
                 'position': 'fixed',
                 height: '46px'
             })
+            elem4.css({
+                left: '-250px',
+                top: '40px'
+            })
             $ls.each((i, elems) => {
                 $(elems).hide()
             })
@@ -66,9 +70,14 @@ function addXd(elem, elem1, elem2, elem3) {
                 'width': "1090px",
                 'line-height': '20px'
             })
-
+            elem4.css({
+                left: '-116px',
+                top: '30px'
+            })
             elem1.css({
                 'position': 'static',
+
+                height: 'auto'
             })
 
             $ls.each((i, elems) => {
@@ -106,6 +115,7 @@ function addXd(elem, elem1, elem2, elem3) {
             elem2.css({
                 position: 'absolute',
                 top: rt + 'px'
+
             })
         }
         if (t >= rt) {

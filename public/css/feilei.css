@@ -1,16 +1,243 @@
-.m-crumbs {
-    width: 1090px;
-    font-size: 12px;
-    color: #333;
-    line-height: 1;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0 auto;
-}
-
 .banner {
     width: 1090px;
     height: 310px;
-    margin-bottom: 30px;
     margin: 0 auto;
+    overflow: hidden;
+}
+
+.tolist {
+    padding: 0 40px;
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.tolist .content {
+    margin-top: 10px;
+    border-bottom: 1px solid #eaeaea;
+    overflow: hidden;
+}
+
+.tolist .content>div {
+    overflow: hidden;
+    border-top: 1px dashed #dedede;
+    line-height: 1;
+    padding-top: 20px;
+}
+
+.tolist .content .c1 {
+    border: none;
+}
+
+.tolist .content>div>div {
+    overflow: hidden;
+    float: left;
+    margin-bottom: 4px;
+    width: 930px;
+}
+
+.tolist .content .c3 {
+    padding: 20px 0;
+}
+
+.tolist .content .c1 a,
+.tolist .content .c2 a {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: #333;
+}
+
+.tolist .content .c3 a {
+    margin-right: 30px;
+    font-size: 14px;
+    color: #333;
+}
+
+.tolist .content .c3 a i {
+    background: url(../images/bj-icon8.png) no-repeat 0 -1217px;
+    display: block;
+    margin-bottom: 2px;
+    height: 5px;
+    width: 10px;
+}
+
+.tolist .content .c3 a:nth-of-type(2) div {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+
+.tolist .content .c3 a:nth-of-type(2) div i:nth-of-type(2) {
+    background-position: 0 -709px;
+}
+
+.tolist .content .c3 a:nth-of-type(3) i {
+    background-position: 0 -687px;
+    height: 12px;
+    width: 9px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 9px;
+    margin-top: -2px;
+}
+
+.tolist .content>div a:nth-of-type(1) {
+    color: #b4a078;
+}
+
+.tolist .content a:hover {
+    color: #b4a078;
+}
+
+.tolist .content>div:not(:nth-of-type(2)) span {
+    font-size: 14px;
+    color: #999;
+    float: left;
+    margin-right: 28px;
+}
+
+.tolist .content>div:nth-of-type(2) span {
+    font-size: 14px;
+    color: #999;
+    float: left;
+    margin-right: 0;
+}
+
+
+/****************************************************/
+
+.cv {
+    padding-top: 30px;
+}
+
+.cv h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.cv p {
+    margin-bottom: 40px;
+    font-size: 13px;
+    color: #999;
+    line-height: 1.5;
+}
+
+.cv .cv-1 {
+    text-align: center;
+    line-height: 1;
+}
+
+.cv .cv-1 ul {
+    margin-top: 25px;
+    margin-right: -10px;
+    overflow: hidden;
+}
+
+.cv .cv-1 ul li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.cv .cv-1 ul li:hover {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, .2);
+    background-color: #f4f0ea;
+}
+
+.cv .cv-1 ul li>div {
+    width: 245px;
+    height: 401px;
+    line-height: 1;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+}
+
+.cv .cv-1 ul li>div .hd {
+    position: relative;
+    margin-bottom: 8px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+}
+
+
+/* .cv .cv-1 ul li>div .hd a {
+    color: #333;
+} */
+
+.cv .cv-1 ul li>div .hd img {
+    width: 245px;
+    height: 245px;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    background-color: #f4f4f4;
+    color: #f4f4f4;
+    display: block;
+    margin: 0 auto;
+}
+
+.bd p:nth-of-type(1) {
+    line-height: 20px;
+    color: #fff!important;
+    padding: 0 5px;
+    background-color: #e36844;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 auto 3px;
+}
+
+.bd p:nth-of-type(2) {
+    color: #d4282d;
+    display: inline;
+    line-height: 22px;
+}
+
+.bd span {
+    margin-left: 6px;
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+    line-height: 22px;
+}
+
+.bd p:nth-of-type(3) {
+    width: 100%;
+    padding: 0 10px;
+    line-height: 18px;
+    color: #999;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bd a {
+    display: block;
+    width: 166px;
+    margin: 0 auto 4px;
+    max-height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    color: #333;
+    font-weight: 700;
+}
+
+.bd a:hover {
+    color: #b4a078;
+}
+
+hr {
+    display: block;
+    width: 130px;
+    height: 1px;
+    padding: 0;
+    margin: 6px auto 14px;
+    border: 0;
+    border-top: 1px solid #e8e8e8;
 }

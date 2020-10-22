@@ -269,5 +269,277 @@
             "id": 2,
             "img": "/public/images/2-banner3.jpg"
         }
-    ]
+    ],
+    "type": [{
+        "id": 0,
+        "name": "全部"
+    }, {
+        "id": 1,
+        "name": "口碑好物"
+    }, {
+        "id": 2,
+        "name": "双11定金购"
+    }, {
+        "id": 3,
+        "name": "抑菌防螨"
+    }, {
+        "id": 4,
+        "name": "秋冬焕新"
+    }, {
+        "id": 5,
+        "name": "收纳好物"
+    }, {
+        "id": 6,
+        "name": "餐厨爆款清单"
+    }, {
+        "id": 7,
+        "name": "床品件套"
+    }, {
+        "id": 8,
+        "name": "被枕盖毯"
+    }, {
+        "id": 9,
+        "name": "床垫床褥"
+    }, {
+        "id": 10,
+        "name": "抱枕靠垫"
+    }, {
+        "id": 11,
+        "name": "家饰布艺"
+    }, {
+        "id": 12,
+        "name": "客餐厅家具"
+    }, {
+        "id": 13,
+        "name": "卧室家具"
+    }, {
+        "id": 14,
+        "name": "办公书房家具"
+    }, {
+        "id": 15,
+        "name": "小件家具"
+    }, {
+        "id": 16,
+        "name": "灯具地毯"
+    }, {
+        "id": 17,
+        "name": "窗帘收纳"
+    }, {
+        "id": 18,
+        "name": "晾晒除味"
+    }, {
+        "id": 19,
+        "name": "毛巾浴巾"
+    }, {
+        "id": 20,
+        "name": "居家拖鞋"
+    }, {
+        "id": 21,
+        "name": "家庭医疗"
+    }, {
+        "id": 22,
+        "name": "锅具"
+    }, {
+        "id": 23,
+        "name": "餐厨配件"
+    }, {
+        "id": 24,
+        "name": "刀剪砧板"
+    }, {
+        "id": 25,
+        "name": "餐具水具"
+    }, {
+        "id": 26,
+        "name": "杯壶茶咖酒具"
+    }, {
+        "id": 27,
+        "name": "宠物食品"
+    }, {
+        "id": 28,
+        "name": "宠物用品"
+    }],
+    "address": [{
+            "id": 0,
+            "name": "全部"
+
+        }, {
+            "id": 1,
+            "name": "香港"
+        },
+        {
+            "id": 2,
+            "name": "台湾"
+        },
+        {
+            "id": 3,
+            "name": "澳门"
+        },
+        {
+            "id": 4,
+            "name": "日韩"
+        },
+        {
+            "id": 5,
+            "name": "欧洲"
+        },
+        {
+            "id": 6,
+            "name": "美洲"
+        }
+    ],
+    "main": {
+        "kkkk": {
+            "name": { "id": 0, "typeName": "口碑好物", "msg": "品质爆款" },
+            "kimg": [{
+                "id": 0,
+                "img": "/public/images/bandeng.png",
+                "imghover": "/public/images/bandeng1.png",
+                "tap": "多功能人体工学转椅",
+                "ys": "11.11预售",
+                "num": "¥999",
+                "sum": "¥1339",
+                "del": "护颈，舒适就坐一整天"
+            }, {
+                "id": 1,
+                "img": "/public/images/yizi.png",
+                "imghover": "/public/images/yizhi1.jpg",
+                "tap": "轻便午睡折叠床",
+                "ys": "",
+                "num": "¥299",
+                "sum": "¥1339",
+                "del": "超高性价比不变价款"
+            }, {
+                "id": 2,
+                "img": "/public/images/anmo.png",
+                "imghover": "/public/images/anmo1.png",
+                "tap": "多功能私享按摩椅",
+                "ys": "",
+                "num": "¥2299",
+                "sum": "",
+                "del": "选款师力荐 专属私人按摩师"
+            }, {
+                "id": 3,
+                "img": "/public/images/tang.png",
+                "imghover": "/public/images/tang1.png",
+                "tap": "AB面乳胶独立弹簧床垫升级款",
+                "ys": "11.11预售",
+                "num": "¥1499",
+                "sum": "¥2199",
+                "del": "仅售供应商建议价的1/3"
+            }, {
+                "id": 4,
+                "img": "/public/images/ban.png",
+                "imghover": "/public/images/ban.jpg",
+                "tap": "冬夏软硬两用 护脊椰棕乳胶床垫 经典款",
+                "ys": "11.11预售",
+                "num": "¥1189",
+                "sum": "¥1699",
+                "del": "天然椰棕护脊，硬度偏好者优选"
+            }, {
+                "id": 5,
+                "img": "/public/images/jingzi1.png",
+                "imghover": "/public/images/jingzi.jpg",
+                "tap": "提升衣品必备，简约日式实木落地镜 新尺寸",
+                "ys": "限时购",
+                "num": "¥185",
+                "sum": "¥209",
+                "del": "新增加大加宽尺寸，透亮镜面更清晰"
+            }, {
+                "id": 6,
+                "img": "/public/images/chuang.png",
+                "imghover": "/public/images/chuang2.png",
+                "tap": "全棉针织条纹四件套",
+                "ys": "新人特价",
+                "num": "¥255",
+                "sum": "¥299",
+                "del": "够柔够弹针织棉，亲肤可裸睡"
+            }, {
+                "id": 7,
+                "img": "/public/images/chuangdan1.png",
+                "imghover": "/public/images/chuangdan.jpg",
+                "tap": "新贵轻奢8小时，60支锦眠贡缎四件套",
+                "ys": "11.11预售",
+                "num": "¥399",
+                "sum": "¥469",
+                "del": "高密纯棉贡缎，入门奢享"
+            }]
+        },
+        "s11": {
+            "name": { "id": 1, "typeName": "双11定金购", "msg": "双11定金购" },
+            "kimg": [{
+                "id": 0,
+                "img": "/public/images/xiaoguo.png",
+                "imghover": "/public/images/haochi.jpg",
+                "tap": "高颜值红锅 经典铸铁珐琅锅24cm",
+                "ys": "11.11预售",
+                "num": "¥242",
+                "sum": "¥358",
+                "del": "高颜值，点缀餐桌更高端"
+
+            }, {
+                "id": 1,
+                "img": "/public/images/xiaoguo.png",
+                "imghover": "/public/images/hongguo.png",
+                "tap": "锁住食材原汁味 经典铸铁珐琅锅22cm",
+                "ys": "11.11预售",
+                "num": "¥185",
+                "sum": "¥268",
+                "del": "高颜值，点缀餐桌更高端"
+            }, {
+                "id": 2,
+                "img": "/public/images/bandeng.png",
+                "imghover": "/public/images/bandeng1.png",
+                "tap": "多功能人体工学转椅",
+                "ys": "11.11预售",
+                "num": "¥999",
+                "sum": "¥1339",
+                "del": "护颈，舒适就坐一整天"
+            }, {
+                "id": 3,
+                "img": "/public/images/tang.png",
+                "imghover": "/public/images/tang1.png",
+                "tap": "AB面乳胶独立弹簧床垫升级款",
+                "ys": "11.11预售",
+                "num": "¥1499",
+                "sum": "¥2199",
+                "del": "仅售供应商建议价的1/3"
+            }, {
+                "id": 4,
+                "img": "/public/images/beibei.png",
+                "imghover": "/public/images/beibei1.jpg",
+                "tap": "让全家人喝上甜甜的水 黑科技镁离子净水壶",
+                "ys": "11.11预售",
+                "num": "¥145",
+                "sum": "¥189",
+                "del": "德国净水黑科技，3.3L大容量"
+            }, {
+                "id": 5,
+                "img": "/public/images/bing.png",
+                "imghover": "/public/images/bing.jpg",
+                "tap": "四重过滤添加矿物质 镁离子滤芯4件装",
+                "ys": "11.11预售",
+                "num": "¥130",
+                "sum": "¥169",
+                "del": "补充镁离子，改善口感"
+            }, {
+                "id": 6,
+                "img": "/public/images/pdg1.jpg",
+                "imghover": "/public/images/pingdg.jpg",
+                "tap": "欧式精铸不粘炒锅30cm",
+                "ys": "11.11预售",
+                "num": "¥145",
+                "sum": "¥229",
+                "del": "精铸耐磨，不粘少油烟"
+            }, {
+                "id": 7,
+                "img": "/public/images/shou1.png",
+                "imghover": "/public/images/shou.jpg",
+                "tap": "16件装 告别油腻解放双手 懒人抹布超值组16卷800节",
+                "ys": "11.11预售",
+                "num": "¥115",
+                "sum": "¥176",
+                "del": "用完即扔 洗碗打扫不用愁"
+            }]
+        }
+    }
 }
